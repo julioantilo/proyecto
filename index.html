@@ -32,15 +32,13 @@
                         <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="estacionamiento.html">lugares</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contactenos</a>
-                        </li>
+
                         <li class="nav-item">
                         </li>
                     </ul>
                     <form class="d-flex">
+                        <a class="btn btn-outline-success" href="registro.html" id="manual-ajax" rel="modal:open">Registrar</a>
 
-                        <a class="btn btn-outline-success" type="submit">Registrarse</a>
                     </form>
 
                     <form class="d-flex">
@@ -81,27 +79,50 @@
 
             <div class="row">
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <h2>Nosotros</h2>
+                    <p>Nosostros somos una empresa de armado de estacionamiento pata darle seguridad a sus vehiculos.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Contactenos
+                      </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Contactenos</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><label for="name">Nombre:</label> <input type="text" id="name" name="nombre" placeholder="Nombre" required> </p>
+                                    <p><label for="rut">Rut:</label> <input type="text" id="text" name="rut" placeholder="Rut" required></p>
+                                    <p><label for="correo">Correo:</label> <input type="text" id="correo" name="correo" placeholder="Correo" required></p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <<button type="button" class="btn btn-primary">Enviar</button>>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-                    <h2>Heading</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+
+                    <h2>Estacionamiento</h2>
+                    <p>En este establecimiento hacemos un cuidado a tu auto por, unos de los lugares mas seguro y puedes verlo desde tu movil.</p>
 
                 </div>
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                        amet risus.</p>
+
+                    <h2>covid-19</h2>
+                    <p>Un poco de informacion del covid-19 para nuestra seguridad y la de ustedes.</p>
+                    <p><a class="btn btn-secondary" href="https://www.gob.cl/coronavirus/" role="button">Información completa &raquo;</a></p>
 
                 </div>
                 <!-- /.col-lg-4 -->
@@ -115,8 +136,11 @@
 
 
         </div>
-        <!-- /.container -->
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
         <!-- FOOTER -->
         <footer class="container">
